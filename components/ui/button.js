@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Button(props) {
   return (
     <Link href={props.link}>
-        <a className={`${classes["btn"]} m-2`}>{props.children}</a>
+        <a className={`${classes["btn"]} d-flex justify-content-center`}>{props.children}</a>
     </Link>
   );
 }

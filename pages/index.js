@@ -17,15 +17,14 @@ export default function Home() {
 
       <Center>
         <Image src="/tapxercise.png" alt="tapxercise" width={1910} height={200} />
-
-        <div className="d-flex flex-column">
+        <center>
           <Button link="/single-mode">
             <span>Single Mode</span>
           </Button>
           <Button link="/battle-mode">
             <span>Battle Mode</span>
           </Button>
-        </div>
+        </center>
       </Center>
     </div>
   );
