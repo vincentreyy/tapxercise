@@ -4,6 +4,8 @@ import Button from "../components/ui/button";
 import Center from "../components/ui/center";
 import styles from "../styles/Home.module.css";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -16,7 +18,7 @@ export default function Home() {
       <Center>
         <Image src="/tapxercise.png" alt="tapxercise" width={1910} height={200} />
 
-        <div>
+        <div className="d-flex flex-column">
           <Button link="/single-mode">
             <span>Single Mode</span>
           </Button>
