@@ -17,16 +17,12 @@ export default function Home() {
         <Image src="/tapxercise.png" alt="tapxercise" width={1910} height={200} />
 
         <div>
-          <div>
-            <Button link="/single-mode">
-              <span>Single Mode</span>
-            </Button>
-          </div>
-          <div>
-            <Button link="/battle-mode">
-              <span>Battle Mode</span>
-            </Button>
-          </div>
+          <Button link="/single-mode">
+            <span>Single Mode</span>
+          </Button>
+          <Button link="/battle-mode">
+            <span>Battle Mode</span>
+          </Button>
         </div>
       </Center>
     </div>
