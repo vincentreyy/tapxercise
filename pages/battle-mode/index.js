@@ -38,11 +38,11 @@ export default function BattleModePage() {
       ></div>
 
       <Center>
-        <Container fluid>
+        <Container>
           <Row>
-            <Col>
+            <Col lg={6} className={styles.bottom}>
               <center>
-                <Form>
+                <Form gameType="2">
                   <Image
                     src="/player-one.png"
                     alt="Player One Name"
@@ -54,7 +54,7 @@ export default function BattleModePage() {
             </Col>
             <Col>
               <center>
-                <Form>
+                <Form gameType="2">
                   <Image
                     src="/player-two.png"
                     alt="Player Two Name"
@@ -62,22 +62,6 @@ export default function BattleModePage() {
                     height={64}
                   />
                 </Form>
-              </center>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <center>
-                <Button link="">
-                  <span>OK</span>
-                </Button>
-              </center>
-            </Col>
-            <Col>
-              <center>
-                <Button link="">
-                  <span>OK</span>
-                </Button>
               </center>
             </Col>
           </Row>

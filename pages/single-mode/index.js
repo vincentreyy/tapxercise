@@ -35,7 +35,7 @@ export default function SingleModePage() {
 
       <Center>
         <center>
-          <Form>
+          <Form gameType="1">
             <Image
               src="/player-single.png"
               alt="Player Name"
@@ -43,11 +43,6 @@ export default function SingleModePage() {
               height={64}
             />
           </Form>
-        </center>
-        <center>
-          <Button link="">
-            <span>OK</span>
-          </Button>
         </center>
       </Center>
     </div>
