@@ -1,4 +1,3 @@
-import { propTypes } from "react-bootstrap/esm/Image";
 import classes from "./background.module.css";
 
 export default function Background(props) {
