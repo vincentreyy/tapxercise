@@ -1,6 +1,7 @@
 import { useRef } from "react";
+import classes from "./form.module.css";
 
-export default function Form() {
+export default function Form(props) {
   const playerInputRef = useRef();
 
   function submitHandler(event) {
@@ -11,8 +12,8 @@ export default function Form() {
 
   return (
     <form onSubmit={submitHandler}>
-      <label htmlFor="player">Player Name</label>
-      <input type="text" required id="player" ref={playerInputRef} />
+      <label htmlFor="player">{props.children}</label>
+      <input className={classes.form} type="text" required id="player" ref={playerInputRef} />
     </form>
   );
 }
