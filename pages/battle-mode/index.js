@@ -38,11 +38,12 @@ export default function BattleModePage() {
       ></div>
 
       <Center>
-        <Container>
+        <Form gameType="2"></Form>
+        {/* <Container>
           <Row>
             <Col lg={6} className={styles.bottom}>
               <center>
-                <Form gameType="2">
+                <Form gameType="2" player="one">
                   <Image
                     src="/player-one.png"
                     alt="Player One Name"
@@ -54,7 +55,7 @@ export default function BattleModePage() {
             </Col>
             <Col>
               <center>
-                <Form gameType="2">
+                <Form gameType="2" player="two">
                   <Image
                     src="/player-two.png"
                     alt="Player Two Name"
@@ -65,7 +66,7 @@ export default function BattleModePage() {
               </center>
             </Col>
           </Row>
-        </Container>
+        </Container> */}
       </Center>
     </div>
   );
