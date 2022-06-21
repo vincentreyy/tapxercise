@@ -8,10 +8,10 @@ export async function connectDatabase() {
   return client;
 }
 
-export async function getPlayers(client, collection, sort) {
+export async function getPlayers(client, collection) {
   const db = client.db();
 
-  const players = await db.collection(collection).find({}).sort(sort).toArray();
+  const players = await db.collection(collection).find({}).toArray();
 
   return players;
 }

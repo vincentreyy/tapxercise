@@ -24,7 +24,7 @@ export default function Form(props) {
         playerTwo: playerTwoName,
       };
 
-      fetch("/api/change-players", {
+      fetch("/api/players", {
         method: "POST",
         body: JSON.stringify(newPlayers),
         headers: {
@@ -44,7 +44,7 @@ export default function Form(props) {
         playerTwo: "",
       };
 
-      fetch("/api/change-players", {
+      fetch("/api/players", {
         method: "POST",
         body: JSON.stringify(newPlayers),
         headers: {

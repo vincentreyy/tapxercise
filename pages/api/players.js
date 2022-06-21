@@ -10,6 +10,15 @@ export default async function handler(req, res) {
     return;
   }
 
+  if (req.method === "GET") {
+    try {
+      const players = await getPlayers(client, 'players');
+      res.status(200).json({ playerslist: players });
+    } catch (error) {
+      res.status(500).json({ message: 'Getting comments failed.' });
+    }
+  }
+
   if (req.method === "POST") {
     const { gameType, playerOne, playerTwo } = req.body;
 
