@@ -1,4 +1,4 @@
-import { connectDatabase, setPlayers } from "../../helpers/db-api";
+import { connectDatabase, getPlayers } from "../../helpers/db-api";
 
 export default async function handler(req, res) {
   let client;
@@ -15,7 +15,7 @@ export default async function handler(req, res) {
       const players = await getPlayers(client, 'players');
       res.status(200).json({ playerslist: players });
     } catch (error) {
-      res.status(500).json({ message: 'Getting comments failed.' });
+      res.status(500).json({ message: 'Getting players failed.' });
     }
   }
 

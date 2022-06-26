@@ -16,6 +16,18 @@ export async function getPlayers(client, collection) {
   return players;
 }
 
+export async function getLeaderboard(client, collection, sort) {
+  const db = client.db();
+
+  const leaderboard = await db
+    .collection(collection)
+    .find()
+    .sort(sort)
+    .toArray();
+
+  return leaderboard;
+}
+
 export async function setPlayers(
   client,
   collection,
