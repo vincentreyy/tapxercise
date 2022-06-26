@@ -23,6 +23,7 @@ export async function getLeaderboard(client, collection, sort) {
     .collection(collection)
     .find()
     .sort(sort)
+    .limit(10)
     .toArray();
 
   return leaderboard;
