@@ -1,0 +1,12 @@
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.grid {
+  border: 1px solid white;
+  color: white;
+}

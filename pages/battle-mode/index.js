@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Col, Container, Row } from "react-bootstrap";
 import Background from "../../components/ui/background";
-import Button from "../../components/ui/button";
 import Center from "../../components/ui/center";
 import Form from "../../components/ui/form";
 

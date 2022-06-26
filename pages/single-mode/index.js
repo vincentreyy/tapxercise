@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Button from "../../components/ui/button";
 import Form from "../../components/ui/form";
 import Center from "../../components/ui/center";
 import Background from "../../components/ui/background";
