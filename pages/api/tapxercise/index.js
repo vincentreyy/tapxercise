@@ -20,7 +20,7 @@ export default async function handler(req, res) {
   }
 
   if (req.method === "POST") {
-    const { gameType, score } = req.body;
+    const { score } = req.body;
 
     console.log(score[0]);
 
@@ -33,7 +33,7 @@ export default async function handler(req, res) {
       res.status(500).json({ message: 'Getting players failed.' });
     }
 
-    if (gameType === 1) {
+    if (players[0].gameType === 1) {
       console.log("Single!");
       let result;
 
@@ -54,7 +54,7 @@ export default async function handler(req, res) {
       } catch (error) {
         res.status(500).json({ message: "Posting score failed!" });
       }
-    } else if (gameType === 2) {
+    } else if (players[0].gameType === 2) {
       console.log("Battle!");
       let result;
 
