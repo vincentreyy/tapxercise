@@ -34,7 +34,7 @@ export default async function handler(req, res) {
     let players;
 
     try {
-      players = await getPlayers(client, "players");
+      players = await getPlayers(client, " players");
       console.log(players[0].playerOne);
     } catch (error) {
       res.status(500).json({ message: "Getting players failed." });
